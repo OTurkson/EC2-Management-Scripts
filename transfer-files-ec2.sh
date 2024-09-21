@@ -14,8 +14,8 @@ if [[ ! "$ip_address" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
 fi
 
 # Ask user for the path to their SSH key pair file (default is 'knust')
-read -e -p "What is the path to your key pair file? [default: knust] " key_pair
-key_pair=${key_pair:-knust}  # Use 'knust' as default if not provided
+read -e -p "What is the path to your key pair file? [default: keypair] " key_pair
+key_pair=${key_pair:-keypair}  # Use 'knust' as default if not provided
 echo
 
 # Check if the key pair file exists
